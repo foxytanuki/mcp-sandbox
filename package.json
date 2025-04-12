@@ -3,10 +3,11 @@
   "version": "1.0.0",
   "type": "module",
   "bin": {
-    "weather": "./build/weather.js"
+    "weather": "./build/weather.js",
+    "gas": "./build/gas.js"
   },
   "scripts": {
-    "build": "tsc && chmod 755 build/weather.js"
+    "build": "tsc && chmod -R 755 build"
   },
   "keywords": [],
   "author": "foxytanuki",
@@ -14,6 +15,7 @@
   "description": "",
   "dependencies": {
     "@modelcontextprotocol/sdk": "^1.9.0",
+    "ethers": "^6.13.5",
     "zod": "^3.24.2"
   },
   "devDependencies": {
